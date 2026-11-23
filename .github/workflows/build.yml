@@ -16,7 +16,7 @@ jobs:
       - name: Build
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
-          unzip -q DocReader.zip
+          unzip -q DocReader-APK.zip
           cd DocReader
           gradle assembleDebug --no-daemon
       - uses: actions/upload-artifact@v4
